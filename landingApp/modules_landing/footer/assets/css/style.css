@@ -1,0 +1,152 @@
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    font-weight: 500;
+    color: #252525;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.footer-btns {
+    display: flex;
+    gap: 24px;
+}
+
+.footer-btns #diplom {
+    background-color: #DDDEFC;
+}
+
+.footer .sociable-link {
+    background-color: #000;
+}
+
+@media(max-width: 880px) {
+    .footer-btns {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 60px;
+        margin-right: auto;
+    }
+
+    .footer-btns #diplom {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer .container {
+        gap: 0;
+    }
+}
+
+@media(max-width: 735px) {
+    .footer-btns {
+        margin: 0;
+        order: -1;
+    }
+
+    .footer .container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .footer {
+        padding-top: 10px;
+    }
+
+    .footer .sociable-links {
+        order: -1;
+    }
+
+    .footer-links {
+        align-self: flex-start;
+    }
+}
+
+@media(max-width: 380px) {
+    .footer-btns {
+        width: 100%;
+    }
+
+    .footer-btns .btn {
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+/*--popup--*/
+.footer .popup-body img {
+    width: 100%;
+}
+
+@media(max-width: 460px) {
+    .footer .popup {
+        padding-top: 100px;
+    }
+
+    .footer .popup-body {
+        max-width: 400px;
+        border-radius: 32px;
+        min-height: auto;
+    }
+}
+
+.copyrite-text {
+    width: 100%;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.footer-links.mobile {
+    display: none;
+    justify-content: space-between;
+    position: relative;
+    gap: 0;
+}
+
+.footer-links-inner {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 25px;
+}
+
+@media(max-width: 810px) {
+    .footer-links {
+        display: none;
+    }
+
+    .footer-links.mobile {
+        display: flex;
+    }
+}
+
+@media(max-width: 485px) {
+    .footer-links.mobile {
+        flex-direction: column;
+        gap: 13px;
+    }
+
+    .footer-links-inner {
+        gap: 13px;
+        text-align: center;
+    }
+}

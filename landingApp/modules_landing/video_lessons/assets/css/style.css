@@ -1,0 +1,180 @@
+.video-lessons {
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    padding-top: 158px;
+    overflow: hidden;
+    position: relative;
+}
+.img-brain {
+    position: relative;
+}
+.img.brain img {
+    width: 100%;
+}
+
+.img.brain img:nth-child(1) {
+    position: absolute;
+    bottom: 12px;
+    left: 6px;
+    animation: elSized 3s linear infinite alternate;
+}
+
+.video-lessons .img.brain {
+    position: absolute;
+    bottom: 40px;
+    right: 60px;
+    width: 165px;
+}
+
+.video-lessons .container {
+    display: flex;
+    padding-bottom: 168px;
+    position: relative;
+}
+
+.video-lessons .container img.iphone {
+    width: 50%;
+    position: absolute;
+    bottom: -64px;
+    left: 0;
+}
+
+.video-lessons-block--left {
+    height: fit-content;
+    max-width: 50%;
+    width: 50%;
+    position: relative;
+    height: 100%;
+}
+
+.video-lessons-block--right {
+    /* width: 50%; */
+    max-width: 50%;
+    position: relative;
+    margin-left: -30px;
+}
+
+.video-lessons ul.video-lessons-list {
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.video-lessons ul.video-lessons-list li {
+    list-style: disc;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.video-lessons-slider {
+    max-width: 100%;
+}
+
+.video-lessons-slider-item {
+    padding: 0 20px 0 28px;
+}
+
+.video-lessons-slider-item h3 {
+    margin-bottom: 60px;
+}
+
+@media(max-width: 1225px) {
+    .video-lessons {
+        padding-top: 120px;
+    }
+}
+
+@media(max-width: 1175px) {
+    .video-lessons {
+        padding-top: 120px;
+    }
+
+    .video-lessons .container img.iphone {
+        transform: rotate(10deg);
+        bottom: auto;
+        top: -20px;
+    }
+}
+
+@media(max-width: 1135px) {
+    .video-lessons-slider-item h3 {
+        margin-bottom: 30px;
+    }
+
+    /* .video-lessons .container {
+        padding-bottom: 0px;
+    } */
+
+    .video-lessons ul.video-lessons-list li {
+        font-size: 14px;
+    }
+}
+
+@media(max-width: 880px) {
+    .video-lessons .container {
+        padding-bottom: 140px;
+    }
+
+    .video-lessons {
+        padding-top: 100px;
+    }
+}
+
+@media(max-width: 780px) {
+    .video-lessons .container img.iphone {
+        transform: rotate(17deg);
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+        left: -39px;
+    }
+
+    .video-lessons {
+        padding-top: 80px;
+    }
+
+    .video-lessons .container {
+        padding-bottom: 120px;
+    }
+
+    .video-lessons-block--right {
+        max-width: 60%;
+    }
+}
+
+@media(max-width: 630px) {
+    .video-lessons .container img.iphone {
+        display: none;
+    }
+    .video-lessons-block--left {
+        display: none;
+    }
+
+    .video-lessons-block--right {
+        max-width: 100%;
+        margin: 0 auto;
+    }
+
+    .video-lessons {
+        padding-top: 50px;
+    }
+
+    .video-lessons ul.video-lessons-list {
+        gap: 15px;
+    }
+}
+
+@media(max-width: 990px) {
+    .video-lessons .img.brain {
+        width: 130px;
+    }
+}
+
+@media(max-width: 720px) {
+    .video-lessons .img.brain {
+        width: 110px;
+        right: 20px;
+        bottom: 10px;
+    }
+}

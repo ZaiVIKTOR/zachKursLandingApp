@@ -1,0 +1,200 @@
+.game {
+    padding-top: 97px;
+    background-color: #181818;
+    background-image: url('../img/bg.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.game-container {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    z-index: 1;
+    position: relative;
+}
+
+.game--left {
+    max-width: 450px;
+    margin-top: 30px;
+}
+
+.game--left h3 {
+    max-width: 400px;
+    margin-bottom: 60px;
+}
+
+.game--left p {
+    color: #fff;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.game--left p.first {
+    margin-bottom: 20px;
+}
+
+.game--left p.second {
+    margin-bottom: 85px;
+}
+
+.game-container img.iphones {
+    width: 540px;
+    position: relative;
+    z-index: 1;
+}
+
+.game img.playBtns {
+    position: absolute;
+    width: 367px;
+    top: -20px;
+    left: 37%;
+    z-index: 0;
+}
+
+@media(max-width: 1135px) {
+    .game--left h3 {
+        margin-bottom: 40px;
+    }
+
+    .game--left p.second {
+        margin-bottom: 60px;
+    }
+
+    .game-container img.iphones {
+        width: 460px;
+    }
+}
+
+@media(max-width: 880px) {
+    .game {
+        padding-top: 70px;
+    }
+
+    .game--left h3 {
+        margin-bottom: 30px;
+    }
+
+    .game--left p.first {
+        margin-bottom: 15px;
+    }
+
+    .game--left p {
+        font-size: 14px;
+    }
+
+    .game-container img.iphones {
+        width: 400px;
+        margin-top: 50px;
+    }
+
+    .game-container {
+        gap: 30px;
+    }
+}
+
+@media(max-width: 720px) {
+    .game-container {
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+
+    .game {
+        overflow: hidden;
+    }
+
+    .game .main-block-info-app-links {
+        margin-top: 400px;
+        position: relative;
+        z-index: 1;
+    }
+
+    .game--left {
+        margin-top: 0;
+        max-width: none;
+    }
+
+    .game {
+        padding-top: 40px;
+    }
+
+    .game--left h3 {
+        max-width: none;
+    }
+
+    .game--left p.second {
+        margin-bottom: 30px;
+    }
+
+    .game .main-block-info-app-links__link {
+        width: 100%;
+    }
+
+    .game-container img.iphones {
+        position: absolute;
+        width: 500px;
+        bottom: -53px;
+        z-index: 0;
+    }
+}
+
+@media(max-width: 550px) {
+    .game-container img.iphones {
+        width: 350px;
+        bottom: -41px;
+    }
+
+    .game .main-block-info-app-links {
+        margin-top: 240px;
+    }
+}
+
+@media(max-width: 400px) {
+    .game-container img.iphones {
+        width: 300px;
+        bottom: -33px;
+    }
+
+    .game .main-block-info-app-links {
+        margin-top: 182px;
+    }
+}
+
+@media(max-width: 963px) {
+    .game img.playBtns {
+        left: 35%;
+    }
+}
+
+@media(max-width: 880px) {
+    .game img.playBtns {
+        width: 320px;
+    }
+}
+
+@media(max-width: 820px) {
+    .game img.playBtns {
+        width: 300px;
+    }
+}
+
+@media(max-width: 720px) {
+    .game img.playBtns {
+        left: -10px;
+        top: 140px;
+        width: 280px;
+    }
+}
+
+@media(max-width: 550px) {
+    .game img.playBtns {
+        width: 230px;
+    }
+}
+
+@media(max-width: 460px) {
+    .game img.playBtns {
+        top: 150px;
+    }
+}

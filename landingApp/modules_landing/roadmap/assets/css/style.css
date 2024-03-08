@@ -1,0 +1,221 @@
+.roadmap {
+    padding-top: 70px;
+    background-color: #232323;
+    background-image: url('../img/pyatno.png');
+    background-repeat: no-repeat;
+    background-position: 240% 110%;
+    background-size: 80%;
+    position: relative;
+}
+
+.roadmap-container {
+    display: flex;
+    gap: 60px;
+    justify-content: center;
+    z-index: 1;
+    position: relative;
+}
+
+.roadmap img.iphone {
+    width: 604px;
+}
+
+.roadmap-container-info {
+    color: #fff;
+    max-width: 458px;
+}
+
+.roadmap-container-info h3 {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.roadmap-container-info ul {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.roadmap-container-info li {
+    list-style: disc;
+    font-size: 16px;
+}
+
+.roadmap ul.first {
+    margin-bottom: 80px;
+}
+
+.roadmap img.calendar {
+    width: 487px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    z-index: 10;
+}
+
+@media(max-width: 1150px) {
+    .roadmap-container {
+        gap: 80px;
+    }
+}
+
+@media(max-width: 1135px) {
+    .roadmap-container-info {
+        margin-bottom: 100px;
+    }
+
+    .roadmap img.iphone {
+        width: 530px;
+    }
+
+    .roadmap img.calendar {
+        width: 400px;
+    }
+}
+
+@media(max-width: 880px) {
+    .roadmap-container-info li {
+        list-style: disc;
+        font-size: 14px;
+    }
+
+    .roadmap-container-info h3 {
+        margin-bottom: 30px;
+    }
+
+    .roadmap-container-info {
+        max-width: 330px;
+    }
+
+    .roadmap-container-info ul {
+        gap: 20px;
+    }
+
+    .roadmap-container-info h3::after {
+        transform: scale(.87);
+        top: -126px;
+    }
+
+    .roadmap img.iphone {
+        width: 360px;
+    }
+
+    .roadmap-container {
+        gap: 50px;
+    }
+    .roadmap ul.first {
+        margin-bottom: 30px;
+    }
+
+    .roadmap img.calendar {
+        width: 280px;
+    }
+}
+
+@media(max-width: 720px) {
+    .roadmap img.iphone {
+        width: 310px;
+    }
+
+    .roadmap-container-info {
+        margin-bottom: 50px;
+    }
+
+    .roadmap-container-info h3::after {
+        transform: scale(.8);
+    }
+
+    .roadmap img.calendar {
+        display: none;
+    }
+}
+
+@media(max-width: 660px) {
+    .roadmap {
+        padding-top: 70px;
+    }
+
+    .roadmap-container {
+        position: relative;
+        align-items: flex-start;
+        padding-bottom: 70px;
+        justify-content: space-between;
+    }
+
+    .roadmap img.iphone {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 210px;
+    }
+
+    .roadmap-container-info {
+        top: -30px;
+        position: relative;
+        z-index: 1;
+        margin-bottom: 0;
+    }
+
+    .roadmap-container-info {
+        padding-left: 20px;
+    }
+
+    .roadmap-container-info h3::after {
+        display: none;
+    }
+}
+
+@media(max-width: 580px) {
+    .roadmap-container-info {
+        max-width: 290px;
+    }
+}
+
+
+@media(max-width: 560px) {
+    .roadmap img.iphone {
+        width: 170px;
+    }
+
+    .roadmap-container {
+        padding-bottom: 30px;
+    }
+}
+
+@media(max-width: 510px) {
+    .roadmap img.iphone {
+        width: 130px;
+    }
+
+    .roadmap-container-info h3::after {
+        display: block;
+        top: -30px;
+        left: auto;
+        right: -150px;
+        transform: scale(.7);
+    }
+}
+
+@media(max-width: 465px) {
+    .roadmap-container-info h3 {
+        max-width: 290px;
+    }
+
+    .roadmap-container-info {
+        max-width: none;
+        width: 100%;
+    }
+
+    .roadmap img.iphone {
+        display: none;
+    }
+}
+
+@media(max-width: 405px) {
+    .roadmap-container-info h3::after {
+        transform: scale(.6);
+        right: -90px;
+    }
+}
